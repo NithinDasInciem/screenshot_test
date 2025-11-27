@@ -1,0 +1,51 @@
+{
+  "name": "base-api",
+  "version": "1.0.0",
+  "description": "Production-ready Express.js",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --watch src --exec \"node --experimental-specifier-resolution=node src/server.js\"",
+    "nodemone": "nodemon src/server.js\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:src": "prettier --write src/**/*.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.400.0",
+    "@aws-sdk/client-sns": "^3.400.0",
+    "@aws-sdk/s3-request-presigner": "^3.400.0",
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "axios": "^1.6.0",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "helmet": "^6.0.0",
+    "ioredis": "^5.7.0",
+    "json2csv": "^5.0.7",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.5",
+    "qrcode": "^1.5.4",
+    "screenshot-desktop": "^1.15.3",
+    "speakeasy": "^2.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "prettier": "^3.6.2"
+  },
+  "author": "Athul",
+  "license": "MIT"
+}
